@@ -4,7 +4,7 @@
   "description": "Group Study and Tutoring App",
   "main": "server.js",
   "scripts": {
-    "start": "node server"
+    "start": "node server",
     "dev": "nodemon server"
   },
   "repository": {
