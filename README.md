@@ -1,4 +1,4 @@
-# Concert
+# 491 Senior Design - Concert | A Collaborative Learning System for Tutoring and Group Study
 
 With an increasing number of online tools required by educational institutions, such as tools like Zoom or Canvas, students need a place where they can study and collaborate with others. There are many resources out there that help out with scheduling and creating group conferences, however none are directly connected to the universities nor are they as user friendly as they could be. Students need a central site that would correlate with their personal classes and subjects that they need help with. Today, especially in the climate we are in now, there is a need for online tools to help manage students with their tutoring and group studies. With the majority of things falling online, there is a bigger need now than ever before to have a stable, organized, and simple way to organize tutoring sessions.
 
