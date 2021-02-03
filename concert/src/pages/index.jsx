@@ -1,6 +1,6 @@
 /*index.jsx*/
 //Import all needed Component for this tutorial
-import {Link} from "react-router-dom";
+import {Link} from "react-router-dom"; // `npm install react-router-dom --save`
 
 //Functional Component
 const MainPage = () => {
@@ -8,7 +8,7 @@ const MainPage = () => {
     <div>
       <h3>Login</h3>
       <br/>
-      <Link to="/dash">Create Group</Link>
+      <Link to="/create-group">Create Group</Link>
     </div>
   );
 };
