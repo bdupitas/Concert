@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+/*App.js*/
+import { Component } from "react";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//Import all needed Component for this tutorial
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect
+} from "react-router-dom";
+
+//Pages
+import MainPage from "./pages"; ///< index.jsx will be automatically imported
+import NotFound from "./pages/404-not-found"; ///< index.jsx will be automatically imported
+import GroupDash from "./pages/group-dash"; ///< index.jsx will be automatically imported
+
+class App extends Component {
+  render() {
+    return (
+      <Router>
+      <Switch>
+       <Route exact path="/" component={MainPage}/>
+       <Route exact path="/error=404" component={NotFound}/>
+       <Route exact path="/dash" component={GroupDash}/>
+       <Redirect to="/error=404"/>
+       </Switch>
+      </Router>
+    );
+  }
 }
 
 export default App;
