@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*App.js*/
 import { Component } from "react";
 import "./App.css";
@@ -28,6 +29,14 @@ class App extends Component {
       </Router>
     );
   }
+=======
+
+import './App.css';
+
+function App() {
+ return (<h1>hello world, .eslintcache sucks</h1>);
+
+>>>>>>> c30f973fa273acdb865b73b25f38341721c4b12e
 }
 
 export default App;
