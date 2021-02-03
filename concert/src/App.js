@@ -1,5 +1,5 @@
 /*App.js*/
-import { Component } from "react";
+import React from "react";
 import "./App.css";
 
 //Import all needed Component for this tutorial
@@ -10,20 +10,18 @@ import {
 } from "react-router-dom";
 
 //Pages
-import MainPage from "./pages"; ///< index.jsx will be automatically imported
-import CreateGroup from "./pages/create-group"; ///< index.jsx will be automatically imported
+import MainPage from "./pages/index"; ///< index.jsx will be automatically imported
+import GroupDash from "./pages/group-dash"; ///< index.jsx will be automatically imported
 
-class App extends Component {
-  render() {
+const App = () => {
     return (
       <Router>
       <Switch>
        <Route exact path="/" component={MainPage}/>
-       <Route exact path="/create-group" component={CreateGroup}/>
+       <Route exact path="/dash" component={GroupDash}/>
        </Switch>
       </Router>
     );
-  }
 }
 
 export default App;
