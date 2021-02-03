@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*App.js*/
 import { Component } from "react";
 import "./App.css";
@@ -7,13 +6,11 @@ import "./App.css";
 import {
   BrowserRouter as Router,
   Route,
-  Switch,
-  Redirect
+  Switch
 } from "react-router-dom";
 
 //Pages
 import MainPage from "./pages"; ///< index.jsx will be automatically imported
-import NotFound from "./pages/404-not-found"; ///< index.jsx will be automatically imported
 import GroupDash from "./pages/group-dash"; ///< index.jsx will be automatically imported
 
 class App extends Component {
@@ -22,21 +19,11 @@ class App extends Component {
       <Router>
       <Switch>
        <Route exact path="/" component={MainPage}/>
-       <Route exact path="/error=404" component={NotFound}/>
        <Route exact path="/dash" component={GroupDash}/>
-       <Redirect to="/error=404"/>
        </Switch>
       </Router>
     );
   }
-=======
-
-import './App.css';
-
-function App() {
- return (<h1>hello world, .eslintcache sucks</h1>);
-
->>>>>>> c30f973fa273acdb865b73b25f38341721c4b12e
 }
 
 export default App;

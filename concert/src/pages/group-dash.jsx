@@ -1,56 +1,46 @@
-import "./../dash.css";
-import "./../root.css";
+import "./../styles/group-dash.css";
+import "./../styles/root.css";
+import SendIcon from "./../images/paper-plane.png";
 
 function GroupDash () {
   return (
     <>
-    <body>
-  		<div class="chat-container">
+  		<div className="chat-container">
       {/*<!-- Home Bar -->*/}
-      <div class="taskbar"></div>
+      <div className="taskbar"></div>
 
-  			<main class="chat-main">
+  			<main className="chat-main">
 
   				{/*<!-- Chat Message List Area -->*/}
-  				<div class="chat-form-message-area">
+  				<div className="chat-form-message-area">
 
   					{/*<!-- Message List Display Box -->*/}
 
-            <div class="dash-header">
+            <div className="dash-header">
   					<h2 id="room-name">COMP491 Concert</h2>
             <p>Welcome to #general</p>
             </div>
 
-  					<div class="chat-messages"></div>
+  					<div className="chat-messages"></div>
 
             {/*<!-- User Input Message Bar -->*/}
-            <div class="chat-form-container">
+            <div className="chat-form-container">
               <form id="chat-form">
-
+              {/*<!-- Send Button -->*/}
+              <button className="send-btn"><img src={SendIcon} className="send-icon" alt="Send Button"/></button>
                 {/*<!-- Message Input Area -->*/}
                 <input id="msg" type="text" placeholder="Enter Message" required autocomplete="off"/>
-
-                {/*<!-- Send Button -->*/}
-                      <button class="btn">
-
-                  {/*<!-- Send Button Icon -->*/}
-                  <svg class="bi bi-reply-fill" xmlns="http://www.w3.org/2000/svg">
-                    <title>Send Icon</title>
-                      <path d="M9.079 11.9l4.568-3.281a.719.719 0 0 0 0-1.238L9.079 4.1A.716.716 0 0 0 8 4.719V6c-1.5 0-6 0-7 8 2.5-4.5 7-4 7-4v1.281c0 .56.606.898 1.079.62z"/>
-                  </svg>
-                  Send
-                </button>
               </form>
             </div>
   				</div>
 
           {/*<!-- Sidebar -->*/}
-          <div class="chat-sidebar">
+          <div className="chat-sidebar">
 
             {/*<!-- Invite Member Button -->*/}
-            <button class="btn" onclick="invite();">Invite</button>
+            <button className="btn">Invite</button>
 
-            <div class="dash-section">
+            <div className="dash-section">
               {/*<!-- Display User List -->*/}
               <h3>Members</h3>
               <ul id="users">
@@ -60,9 +50,14 @@ function GroupDash () {
               </ul>
             </div>
 
-            <div class="dash-section">
-              {/*<!-- Display Channels -->*/}
+            {/*<!-- Display Channels -->*/}
+            <div className="dash-section">
+
+              <div className="sidebar-component">
               <h3>Channels</h3>
+              <button className="btn">+</button>
+              </div>
+
               <ul>
                 <li># general</li>
                 <li># Assignment 2</li>
@@ -70,19 +65,29 @@ function GroupDash () {
               </ul>
             </div>
 
-            <div class="dash-section">
-              {/*<!-- Display Upcoming Events -->*/}
-              <h3>Upcoming Events</h3>
+            {/*<!-- Display Upcoming Events -->*/}
+            <div className="dash-section">
+
+              <div className="sidebar-component">
+              <h3>Meetings</h3>
+              <button className="btn">+</button>
+              </div>
+
               <ul>
                 <li>Meeting 1</li>
                 <li>Meeting 2</li>
                 <li>Meeting 3</li>
               </ul>
+
             </div>
           </div>
         </main>
   		</div>
-  	</body>
+      <div>
+      Icons made by
+      <a href="https://www.freepik.com" title="Freepik">Freepik</a>
+      from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+      </div>
     </>
   );
 }

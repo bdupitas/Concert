@@ -6,8 +6,7 @@ import {Link} from "react-router-dom";
 const MainPage = () => {
   return (
     <div>
-      <h3>Welcome to the React Router Tutorial</h3>
-      <small>Main Page</small>
+      <h3>Login</h3>
       <br/>
       <Link to="/dash">Group Dash</Link>
     </div>
