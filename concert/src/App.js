@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 
 //Pages
-import MainPage from "./pages"; ///< index.jsx will be automatically imported
+import MainPage from "./pages/index"; ///< index.jsx will be automatically imported
 import GroupDash from "./pages/group-dash"; ///< index.jsx will be automatically imported
 
 const App = () => {
