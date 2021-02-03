@@ -1,5 +1,5 @@
 /*App.js*/
-import { Component } from "react";
+import React from "react";
 import "./App.css";
 
 //Import all needed Component for this tutorial
@@ -13,8 +13,7 @@ import {
 import MainPage from "./pages"; ///< index.jsx will be automatically imported
 import GroupDash from "./pages/group-dash"; ///< index.jsx will be automatically imported
 
-class App extends Component {
-  render() {
+const App = () => {
     return (
       <Router>
       <Switch>
@@ -23,7 +22,6 @@ class App extends Component {
        </Switch>
       </Router>
     );
-  }
 }
 
 export default App;
