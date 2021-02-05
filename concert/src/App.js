@@ -14,14 +14,16 @@ import MainPage from "./pages/index"; ///< index.jsx will be automatically impor
 import GroupDash from "./pages/group-dash"; ///< index.jsx will be automatically imported
 
 const App = () => {
-    return (
+    return(
+      <Container className="mx-auto">
       <Router>
-      <Switch>
-       <Route exact path="/" component={MainPage}/>
-       <Route exact path="/dash" component={GroupDash}/>
-       </Switch>
+        <Switch>
+        <Route exact path="/" component={MainPage}/>
+        <Route exact path="/dash" component={GroupDash}/>
+        </Switch>
       </Router>
-    );
-}
+      </Container>
+    )
+};
 
 export default App;
