@@ -1,0 +1,131 @@
+/* COMP 491L | Spring 2021                              */
+/* Senior Project: Concert                              */
+/* File: root.css                                       */
+/*======================================================*/
+
+/*===========================*/
+/* Styling for whole website */
+/*===========================*/
+
+
+/* Universal Styling */
+* {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+} /* end * */
+
+
+/* Nav Bar Styling */
+nav {
+	background-color: #d22030;
+	overflow: hidden;
+	padding: 1em;
+	width: 75%;
+	margin: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+} /* end nav */
+
+
+/* Nav Link Styling */
+nav a {
+	color: #ffffff;
+	text-align: center;
+	padding: 1em;
+	text-decoration: none;
+	cursor: pointer;
+} /* end nav a */
+
+
+/* Nav Link Styling On Mouse Hover */
+nav a:hover {
+	background-color: #000000;
+} /* end a:hover */
+
+
+/* Body styling */
+body {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1em;
+        background:  #EAF0FC;
+        width: 100%;
+        height: 100%;
+	margin: auto;
+} /* end body */
+
+
+/* Header Styling */
+header {
+	text-align: center;
+        font-family: 'Helvetica', sans-serif;
+        font-size: 1em;
+	padding: 2em;
+} /* end header */
+
+
+/* Heading 1 Styling using Google Font */
+h1 {
+	font-family: 'Averia Sans Libre', cursive;
+	padding: 2em;
+} /* end h1 */
+
+
+/* Heading 2 Styling*/
+h2 {
+color: #707070;
+  padding: 0.5em 0em;
+  font-weight: 100;
+  font-size: 2em;
+} /* end h2 */
+
+h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 100;
+}
+
+/* Remove bullet points from unordered list */
+ul {
+        list-style: none;
+} /* end ul */
+
+
+/* Button Styling */
+.btn {
+        cursor: pointer;
+        padding: 0.5em 1em;
+        background: #75A8CB;
+        color: #ffffff;
+        border: none;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1em;
+	       border-radius: 5px;
+} /* end .btn */
+
+
+/* Change button color on mouse hover */
+.btn:hover {
+	background: #000000;
+} /* end .btn:hover */
+
+/* Remove input box border*/
+input {
+  border: 0em;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Reactstrap Icon Styling */
+svg {
+	width: 2em;
+	height: 1.5em;
+	viewBox: 0 0 16 16;
+	fill: currentColor;
+} /* end svg */
+
+/* Change layout for smaller screens */
+@media only screen and (max-width: 700px) {
+  h2 {
+    font-size: 1em;
+  }
+} /* end media */

@@ -1,0 +1,204 @@
+/* COMP 491L | Spring 2021                              */
+/* Senior Project: Concert                              */
+/* File: dash.css                                       */
+/*======================================================*/
+
+/*===========================*/
+/* Styling for group pages   */
+/*===========================*/
+
+/* Whole Chat Box */
+.chat-container {
+        display: grid;
+        grid-template-columns: 1fr 20fr;
+        max-width: 100vw;
+        height: 100vh;
+        background: #ffffff;
+} /* end .chat-container */
+
+/* Taskbar to left of page to hold Home, Create Groups, Group Icons*/
+.taskbar {
+        background: #394B58;
+        color: #FFFFFF;
+}
+
+/* Top of Message Box with Group Name and Course Info */
+.dash-header{
+  border-bottom: 1px solid #bec6c3;
+  padding: 1em;
+  margin: 1em;
+}
+
+/* 'Members', 'Channels', 'Meetings' and '+' adjustments*/
+.sidebar-component{
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+
+/* '+' Button styleing in sidebar */
+.chat-sidebar .sidebar-component .btn{
+  cursor: pointer;
+  padding: 0em;
+  margin: 0em;
+  background: none;
+
+}
+
+/* Change button color on mouse hover */
+.sidebar-component .btn:hover {
+	background: none;
+} /* end .btn:hover */
+
+/* Chatroom sidebar and message container  */
+.chat-main {
+        display: grid;
+        grid-template-columns: 15fr 4fr;
+	      min-height: 45vh;
+        background-color: #EAF0FC;
+} /* end .chat-main */
+
+
+/* Chatroom sidebar box */
+.chat-sidebar {
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr 2fr;
+        background: #394B58;
+        color: #FFFFFF;
+        padding: 2em;
+} /* end .chat-sidebar */
+
+/* Sidebar 'Members', 'Channels', 'Meetings' sections */
+.dash-section {
+    border-top: 1px solid #FFFFFF;
+    overflow-y: auto;
+}
+
+/* Leave Room Button */
+.chat-sidebar .btn {
+  margin: 1.5em;
+	text-decoration: none;
+	width: auto;
+	font-size: auto;
+} /* end .chat-sidebar .btn */
+
+
+/* Message Area */
+.chat-messages {
+        padding: 1em;
+        min-height: 60vh;
+	      max-height: 60vh;
+        overflow-y: auto;
+} /* end .chat-messages */
+
+
+/* Contains H2, Smaller screen Leave Button, Message Display */
+.chat-form-message-area .btn {
+	display: none;
+	float: right;
+	margin: 1em;
+} /* end .chat-form-message-area .btn */
+
+
+/* Message Text Box Background */
+.chat-messages .message {
+        padding: 1em;
+        margin-bottom: 1em;
+        background-color: #FFFFFF;
+        border-radius: 5px;
+} /* end .chat-messages .message */
+
+
+/* Message Text Box Contents */
+.chat-messages .message .meta {
+        font-size: 1em;
+        font-weight: bold;
+        color: #000000;
+        opacity: 0.7;
+        margin-bottom: 0.5em;
+} /* end .chat-messages .message .meta */
+
+
+/* Message Time */
+.chat-messages .message .meta span {
+        color: ##75A8CB;
+} /* end .chat-messages .message .meta span */
+
+
+/* Bottom Message Bar */
+.chat-form-container {
+        padding: 1em 1em;
+} /* end .chat-form-container */
+
+/* 'Send' button */
+.send-btn {
+  background: #fff;
+  border: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Image used for 'Send' button */
+.send-icon {
+  cursor: pointer;
+  background: #fff;
+  height: 2em;
+
+}
+
+/* Message Input Bar */
+.chat-form-container form {
+        display: flex;
+} /* end .chat-form-container form */
+
+
+/* Message Input Bar Input */
+.chat-form-container input {
+        font-size: 1em;
+        padding: 0.5em;
+        height: 2em;
+	min-width: 70%;
+        flex: 1;
+} /* end .chat-form-container input */
+
+
+/* Change layout for smaller screens */
+@media only screen and (max-width: 700px) {
+
+	/* Change content from grid to block */
+        .chat-main {
+                display: block;
+        } /* end .chat-main */
+
+	/* Hide sidebar */
+        .chat-sidebar {
+                display: none;
+        } /* end .chat-sidebar */
+
+  /* Hide taskbar */
+        .taskbar {
+                display: none;
+        } /* end .taskbar */
+
+	/* Remove padding from user input bar */
+	.chat-form-container {
+		padding: 0;
+	} /* end .chat-form-container */
+
+  /* Remove padding from user input bar */
+	.chat-container {
+		display: block;
+    height: auto;
+	} /* end .chat-form-container */
+
+	/* Show res-Leave Button */
+	.chat-form-message-area .btn {
+		display: block;
+    margin: auto;
+	}/* end .chat-form-message-area .btn */
+
+  /* Message Input Bar Input */
+  .chat-form-container input {
+    margin: auto;
+  } /* end .chat-form-container input */
+
+} /* end media */
