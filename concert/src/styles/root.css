@@ -115,10 +115,10 @@ input {
   border-bottom-left-radius: 0;
 }
 
-/* BootStrap Icon Styling */
+/* Reactstrap Icon Styling */
 svg {
-	width: 1em;
-	height: 1em;
+	width: 2em;
+	height: 1.5em;
 	viewBox: 0 0 16 16;
 	fill: currentColor;
 } /* end svg */

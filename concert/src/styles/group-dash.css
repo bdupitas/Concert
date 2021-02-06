@@ -103,7 +103,7 @@
 .chat-messages .message {
         padding: 1em;
         margin-bottom: 1em;
-        background-color: #bec6c3;
+        background-color: #FFFFFF;
         border-radius: 5px;
 } /* end .chat-messages .message */
 
@@ -120,7 +120,7 @@
 
 /* Message Time */
 .chat-messages .message .meta span {
-        color: #d22030;
+        color: ##75A8CB;
 } /* end .chat-messages .message .meta span */
 
 
