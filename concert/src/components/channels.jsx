@@ -10,6 +10,7 @@ function Channels () {
 
       <div className="sidebar-component">
       <h3 className="title">Channels</h3>
+      
       <GoPlusSmall color ="white" />
       </div>
 

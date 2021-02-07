@@ -18,12 +18,6 @@
 
 /* end .chat-container */
 
-/* Taskbar to left of page to hold Home, Create Groups, Group Icons*/
-.taskbar {
-        background: #394B58;
-        color: #FFFFFF;
-}
-
 /* Top of Message Box with Group Name and Course Info */
 .dash-header {
         border-bottom: 1px solid #bec6c3;
@@ -210,13 +204,6 @@
         }
 
         /* end .chat-sidebar */
-
-        /* Hide taskbar */
-        .taskbar {
-                display: none;
-        }
-
-        /* end .taskbar */
 
         /* Remove padding from user input bar */
         .chat-form-container {
