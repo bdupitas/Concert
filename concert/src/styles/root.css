@@ -122,6 +122,11 @@ svg {
 	fill: currentColor;
 } /* end svg */
 
+.login-lamp{
+  height: auto;
+  width: auto;
+}
+
 /* Change layout for smaller screens */
 @media only screen and (max-width: 700px) {
   h2 {
