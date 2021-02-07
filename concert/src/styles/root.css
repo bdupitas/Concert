@@ -51,7 +51,7 @@ body {
         background:  #EAF0FC;
         width: 100%;
         height: 100%;
-	margin: auto;
+	     margin: auto;
 } /* end body */
 
 
@@ -91,6 +91,7 @@ ul {
 
 
 /* Button Styling */
+
 .btn {
         cursor: pointer;
         padding: 0.5em 1em;
@@ -119,7 +120,6 @@ input {
 svg {
 	width: 2em;
 	height: 1.5em;
-  viewBox: 0 0 16 16;
 	fill: currentColor;
 } /* end svg */
 

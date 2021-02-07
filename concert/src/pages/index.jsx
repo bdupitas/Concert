@@ -8,10 +8,11 @@ const MainPage = () => {
 return( <div className="chat-container"> 
 <TaskBar />
 <Login children={<Link to="/dash">Group Dash</Link> }/> 
-</div>)
+</div>
+)
 }
       
-   
+
 
 
 export default MainPage;

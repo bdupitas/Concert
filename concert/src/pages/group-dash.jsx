@@ -4,7 +4,7 @@ import TaskBar from "./../components/taskbar";
 import ChatBox from "./../components/chat-box";
 import ChatSideBar from "./../components/chat-sidebar";
 
-function GroupDash () {
+function GroupDash ({children}) {
   return (
     <>
   		<div className="chat-container">

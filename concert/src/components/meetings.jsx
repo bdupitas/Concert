@@ -9,8 +9,8 @@ function Meetings () {
     <div className="dash-section">
 
       <div className="sidebar-component">
-      <h3>Meetings</h3>
-      <button className="btn"><GoPlusSmall/></button>
+      <h3 className="title" >Meetings</h3>
+      <GoPlusSmall color ="white" />
       </div>
 
       <ul>
