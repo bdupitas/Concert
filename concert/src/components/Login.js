@@ -6,13 +6,14 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
+
 import {ReactComponent as Lamp} from "../images/loginLamp.svg"
 
-const Login = (props) => {
+const Login = ({children}) => {
   return (
+    <>
     <Container>
-    <Jumbotron md={{ span: 6, offset: 3 }}>
-    
+    <Jumbotron className="mt-5" md={{ span: 6, offset: 3 }}>
       <Row>
         <Col>
         <Lamp className="login-lamp" />
@@ -37,10 +38,12 @@ const Login = (props) => {
             Submit
              </Button>
           </Form>
+          {children}
         </Col>      
       </Row>
     </Jumbotron>
   </Container>
+  </>
   );
 };
    
