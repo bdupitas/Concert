@@ -2,7 +2,7 @@ import React from "react"
 import Button from 'react-bootstrap/Button'
 
 const PrimaryButton = (properties) => {
-    return( 
+    return(
      <>
     <style type="text/css">
     {`
@@ -19,6 +19,7 @@ const PrimaryButton = (properties) => {
 
     .btn-light:hover{
         background: #000000;
+        color: white;
     }
 
     `}

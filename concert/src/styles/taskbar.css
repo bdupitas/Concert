@@ -1,0 +1,27 @@
+/* Individual group icon in taskbar */
+.group-icon {
+    height: 1em;
+}
+
+/* Taskbar to left of page to hold Home, Create Groups, Group Icons*/
+.taskbar {
+        height: 100%;
+        align-content: center;
+        background: #394B58;
+        color: #FFFFFF;
+        padding: 1em;
+}
+
+/* Icons of created groups in the taskbar */
+.taskbar-group-icons {
+        align-items: stretch;
+        overflow-y: auto;
+}
+
+/* Change layout for smaller screens */
+@media only screen and (max-width: 700px) {
+        /* Hide taskbar */
+        .taskbar {
+                display: none;
+        } /* end .taskbar */
+}
