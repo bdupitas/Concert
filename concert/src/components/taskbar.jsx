@@ -11,15 +11,15 @@ function TaskBar () {
   return (
     <>
     <Container className="taskbar">
-      <View className="home-button">
+      <View style={{ flex: 1 }}>
           {/*<!-- Home Button -->*/}
           <HomeButton />
       </View>
-      <View className="taskbar-group-icons">
+      <View style={{ flex: 7 }}>
         {/*<!-- Created Groups -->*/}
         <TaskBarGroupIcons />
       </View>
-      <View className="create-group-button">
+      <View style={{ flex: 1 }}>
         {/*<!-- Create Group Button -->*/}
         <CreateGroupButton />
       </View>

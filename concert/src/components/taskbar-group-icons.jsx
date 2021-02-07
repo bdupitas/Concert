@@ -1,7 +1,6 @@
 import "./../styles/taskbar.css";
 import "./../styles/root.css";
-import Button from 'react-bootstrap/Button';
-import Icon from "./../images/loginLamp.svg";
+import GroupIcon from "./group-icon";
 
 
 function TaskBarGroupIcons () {
@@ -9,19 +8,13 @@ function TaskBarGroupIcons () {
     <>
     <ul>
       <li>
-        <Button style={{ background: 'none', border: 'none' }}>
-          <img src={ Icon } className="group-icon" alt=""/>
-        </Button>
+        <GroupIcon />
       </li>
       <li>
-        <Button style={{ background: 'none', border: 'none' }}>
-          <img src={ Icon } className="group-icon" alt=""/>
-        </Button>
+          <GroupIcon />
       </li>
       <li>
-        <Button style={{ background: 'none', border: 'none' }}>
-          <img src={ Icon } className="group-icon" alt=""/>
-        </Button>
+          <GroupIcon />
       </li>
     </ul>
     </>

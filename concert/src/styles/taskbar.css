@@ -1,8 +1,13 @@
+/* ./components/taskbar-group-icons.jsx */
 /* Individual group icon in taskbar */
 .group-icon {
-    height: 3em;
+    height: 3.5em;
+    width: 3.5em;
+    margin: 0.5em;
+    border-radius: 50px;
 }
 
+/* ./components/taskbar.jsx */
 /* Taskbar to left of page to hold Home, Create Groups, Group Icons*/
 .taskbar {
   display: flex;
@@ -12,22 +17,6 @@
         background: #394B58;
         color: #FFFFFF;
         padding: 1em;
-}
-
-/* Icons of created groups in the taskbar */
-.taskbar-group-icons {
-    flex: 7;
-        align-items: stretch;
-        overflow-y: auto;
-        overflow-x: hidden;
-}
-
-.home-button {
-  flex: 1;
-}
-
-.create-group-button {
-  flex: 1;
 }
 
 /* Change layout for smaller screens */
