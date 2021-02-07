@@ -5,6 +5,8 @@
 
 /* Taskbar to left of page to hold Home, Create Groups, Group Icons*/
 .taskbar {
+  display: flex;
+  flex-direction: column;
         height: 100%;
         align-content: center;
         background: #394B58;
@@ -14,9 +16,18 @@
 
 /* Icons of created groups in the taskbar */
 .taskbar-group-icons {
+    flex: 7;
         align-items: stretch;
         overflow-y: auto;
         overflow-x: hidden;
+}
+
+.home-button {
+  flex: 1;
+}
+
+.create-group-button {
+  flex: 1;
 }
 
 /* Change layout for smaller screens */
