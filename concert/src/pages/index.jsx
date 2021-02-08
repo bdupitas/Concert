@@ -1,19 +1,27 @@
-
-import Login from "../components/Login"
-import {Link} from "react-router-dom";
-import TaskBar from "../components/taskbar"
+import HomepageCard from "../components/HomepageCard";
+import { Link } from "react-router-dom";
+import TaskBar from "../components/taskbar";
+import Login from "../components/Login";
+import { Children } from "react";
 
 //Functional Component
-const MainPage = () => {
-return(
-  <div className="chat-container">
-   <TaskBar />
-   <Login children={<Link to="/dash">Group Dash</Link> }/>
-  </div>
-)
-}
-
-
-
+const MainPage = ({children}) => {
+  return (
+    <div className="chat-container">
+      <TaskBar />
+      <HomepageCard
+        children={
+          <>
+            {children}
+            <Link className="mr-2" to="/dash">Group Dash</Link>
+            <Link className="mr-2"to="/Sign-up">Sign up</Link>
+            <Link className="mr-2"to="/Forgot">Forgot Pass</Link>
+            <Link className="mr-2"to="/">Login</Link>
+          </>
+        }
+      />
+    </div>
+  );
+};
 
 export default MainPage;

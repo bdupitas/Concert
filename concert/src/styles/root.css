@@ -70,6 +70,10 @@ h1 {
 	padding: 2em;
 } /* end h1 */
 
+.forgotTitle h1{ 
+  padding:0;
+}
+
 
 /* Heading 2 Styling*/
 h2 {
@@ -128,7 +132,7 @@ svg {
 	fill: currentColor;
 } /* end svg */
 
-.login-lamp{
+.login-svg{
   height: auto;
   width: auto;
 }
