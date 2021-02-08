@@ -25,7 +25,7 @@ const ForgotPass = ({ children }) => {
             <Form.Control type="email" placeholder="Enter email" />
           </Form.Group>
           <Button variant="primary" type="submit">
-            Sign in
+            Submit
           </Button>
         </Col>
         <Col>

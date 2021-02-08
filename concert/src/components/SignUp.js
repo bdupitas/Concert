@@ -42,7 +42,7 @@ const SignUp = ({ children }) => {
             </Form.Group>
 
             <Button variant="primary" type="submit">
-              Submit
+              Create Account
             </Button>
           </Form>
 

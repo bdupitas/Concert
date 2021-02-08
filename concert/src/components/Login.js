@@ -29,14 +29,13 @@ const Login = ({ children }) => {
             <Form.Group controlId="formBasicCheckbox">
               <Form.Check type="checkbox" label="Check me out" />
             </Form.Group>
-            <ButtonGroup>
+           
               <Button className="mr-2" variant="outline-primary" type="submit">
                 Sign up
               </Button>
               <Button variant="primary" type="submit">
                 Sign in
               </Button>
-            </ButtonGroup>
           </Form>
           {children}
         </Col>
