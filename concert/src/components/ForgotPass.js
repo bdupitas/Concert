@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import { ReactComponent as PlantPot } from "../images/PlantPot.svg";
 
 const phrase = `
-Please enter in the Email addreee you used to create
+Please enter in the Email address you used to create
 your account below, and we will send you 
 instructions to reset your password
 `;
