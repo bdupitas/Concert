@@ -7,7 +7,7 @@ import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import { makeStyles } from "@material-ui/core/styles";
 import { ThemeProvider, createMuiTheme} from "@material-ui/core/styles";
-import './CreateGroup.css'
+import '../styles/CreateGroup.css'
 import addImageLogo from '../images/add-image.png'
 import CreateGroupButton from "./create-group-button"
 
