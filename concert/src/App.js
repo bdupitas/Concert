@@ -17,20 +17,19 @@ import ForgotPass from "./components/ForgotPass";
 const App = () => {
   const Home = () => <MainPage children={<Login />}/> 
   const CreateAccount = () => <MainPage children={<SignUp />}/>
-
-
-  return (
+  const ForgotAccount = () => <MainPage children={<ForgotPass />} />
+  return(
     <Router>
       <Switch>
         <Route exact path="/" component={Home}>
         <Home />
         </Route>
-        {/* <Route exact path="/Forgot">
-          <MainPage mode={ForgotPass} />
+        <Route exact path="/Forgot">
+          <ForgotAccount />
         </Route>
         <Route exact path="/Sign-up">
-          <MainPage mode={SignUp} />
-        </Route> */}
+          <CreateAccount />
+        </Route>
         <Route exact path="/dash">
           <GroupDash />
         </Route>

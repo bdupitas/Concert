@@ -11,7 +11,7 @@ const Login = ({ children }) => {
     <>
       <Row>
         <Col>
-          <Lamp className="login-lamp" />
+          <Lamp className="login-svg" />
         </Col>
         <Col>
           <Form>

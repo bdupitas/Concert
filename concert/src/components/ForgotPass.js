@@ -3,41 +3,35 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import ButtonGroup from "react-bootstrap/ButtonGroup";
-import { ReactComponent as Lamp } from "../images/loginLamp.svg";
+import { ReactComponent as PlantPot } from "../images/PlantPot.svg";
+
+
+const phrase =  
+`
+Please enter in the Email addreee you used to create
+your account below, and we will send you 
+instructions to reset your password
+`
 
 const ForgotPass = ({ children }) => {
   return (
     <>
       <Row>
         <Col>
-          <Lamp className="login-lamp" />
-        </Col>
-        <Col>
-          <Form>
-            <Form.Group controlId="formBasicEmail">
+        <div className="forgotTitle">
+        <h1>No Worries</h1>
+        <p>{phrase}</p>
+        </div>
+        <Form.Group controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
               <Form.Control type="email" placeholder="Enter email" />
-              <Form.Text className="text-muted">
-                We'll never share your email with anyone else.
-              </Form.Text>
             </Form.Group>
-            <Form.Group controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
-            </Form.Group>
-            <Form.Group controlId="formBasicCheckbox">
-              <Form.Check type="checkbox" label="Check me out" />
-            </Form.Group>
-            <ButtonGroup>
-              <Button className="mr-2" variant="outline-primary" type="submit">
-                Sign up
-              </Button>
-              <Button variant="primary" type="submit">
+            <Button variant="primary" type="submit">
                 Sign in
               </Button>
-            </ButtonGroup>
-          </Form>
+        </Col>
+        <Col>
+        <PlantPot className="login-svg"/>
           {children}
         </Col>
       </Row>
