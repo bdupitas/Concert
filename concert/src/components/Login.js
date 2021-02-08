@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import ButtonGroup from "react-bootstrap/ButtonGroup";
 import { ReactComponent as Lamp } from "../images/loginLamp.svg";
 
 const Login = ({ children }) => {
@@ -28,9 +29,14 @@ const Login = ({ children }) => {
             <Form.Group controlId="formBasicCheckbox">
               <Form.Check type="checkbox" label="Check me out" />
             </Form.Group>
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
+            <ButtonGroup>
+              <Button className="mr-2" variant="outline-primary" type="submit">
+                Sign up
+              </Button>
+              <Button variant="primary" type="submit">
+                Sign in
+              </Button>
+            </ButtonGroup>
           </Form>
           {children}
         </Col>
