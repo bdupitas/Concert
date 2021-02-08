@@ -1,7 +1,6 @@
 /*App.js*/
 import React from "react";
 import "./App.css";
-import CreateGroup from "./components/CreateGroup.js"
 
 //Import all needed Component for this tutorial
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -17,7 +16,6 @@ import ForgotPass from "./components/ForgotPass";
 
 const App = () => {
   return (
-    <>
     <Router>
       <Switch>
         <Route exact path="/">
@@ -34,8 +32,6 @@ const App = () => {
         </Route>
       </Switch>
     </Router>
-    <CreateGroup />
-    </>
   );
 };
 
