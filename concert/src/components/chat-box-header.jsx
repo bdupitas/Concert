@@ -1,14 +1,16 @@
 import "./../styles/group-dash.css";
 import "./../styles/root.css";
-import Container from 'react-bootstrap/Container';
+import { Link } from "react-router-dom";
+import { BsCameraVideoFill } from "react-icons/bs";
 
-function ChatBoxHeader ({children}) {
+function ChatBoxHeader () {
   return (
     <>
-    <Container className="dash-header">
+    <div className="dash-header">
     <h2 id="room-name">COMP491 Concert</h2>
     <p>Welcome to #general</p>
-    </Container>
+    <Link to=""><BsCameraVideoFill /></Link>
+    </div>
     </>
   );
 }
