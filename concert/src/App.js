@@ -11,27 +11,24 @@ import GroupDash from "./pages/group-dash"; ///< index.jsx will be automatically
 
 //imports modes for the main page to re-render
 import Login from "./components/Login";
-import SignUp from "./components/SignUp"
+import SignUp from "./components/SignUp";
 import ForgotPass from "./components/ForgotPass";
 
 const App = () => {
-  const Home = () => <MainPage children={<Login />}/> 
-  const CreateAccount = () => <MainPage children={<SignUp />}/>
-  const ForgotAccount = () => <MainPage children={<ForgotPass />} />
-  return(
+  return (
     <Router>
       <Switch>
-        <Route exact path="/" component={Home}>
-        <Home />
+        <Route exact path="/">
+        <MainPage children={<Login />} />
         </Route>
         <Route exact path="/Forgot">
-          <ForgotAccount />
+        <MainPage children={<ForgotPass />} />
         </Route>
         <Route exact path="/Sign-up">
-          <CreateAccount />
+        <MainPage children={<SignUp />}/>
         </Route>
         <Route exact path="/dash">
-          <GroupDash />
+        <GroupDash />
         </Route>
       </Switch>
     </Router>

@@ -13,9 +13,10 @@ const MainPage = ({children}) => {
         children={
           <>
             {children}
-            <Link to="/dash">Group Dash</Link>
-            <Link to="/Sign-up">Sign up</Link>
-            <Link to="/Forgot">Forgot Pass</Link>
+            <Link className="mr-2" to="/dash">Group Dash</Link>
+            <Link className="mr-2"to="/Sign-up">Sign up</Link>
+            <Link className="mr-2"to="/Forgot">Forgot Pass</Link>
+            <Link className="mr-2"to="/">Login</Link>
           </>
         }
       />
