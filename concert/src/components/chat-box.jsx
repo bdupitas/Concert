@@ -1,31 +1,21 @@
 import "./../styles/group-dash.css";
 import "./../styles/root.css";
-import { FaRegPaperPlane } from "react-icons/fa";
+import MessageInputBar from "./message-input-bar";
+import MessageList from "./message-list";
+import ChatBoxHeader from "./chat-box-header";
+
 
 function ChatBox () {
   return (
     <>
     {/*<!-- Chat Message List Area -->*/}
     <div className="chat-form-message-area">
-
       {/*<!-- Message List Display Box -->*/}
-      <div className="dash-header">
-      <h2 id="room-name">COMP491 Concert</h2>
-      <p>Welcome to #general</p>
-      </div>
-
+      <ChatBoxHeader />
       {/*<!-- Messages -->*/}
-      <div className="chat-messages"></div>
-
+      <MessageList />
       {/*<!-- User Input Message Bar -->*/}
-      <div className="chat-form-container">
-        <form id="chat-form">
-        {/*<!-- Send Button -->*/}
-        <button className="send-btn"><FaRegPaperPlane/></button>
-          {/*<!-- Message Input Area -->*/}
-          <input id="msg" type="text" placeholder="Enter Message" required autocomplete="off"/>
-        </form>
-      </div>
+      <MessageInputBar />
     </div>
     </>
   );

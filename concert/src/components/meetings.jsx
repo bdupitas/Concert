@@ -1,6 +1,8 @@
 import "./../styles/group-dash.css";
 import "./../styles/root.css";
+import { Link } from "react-router-dom";
 import { GoPlusSmall } from "react-icons/go";
+
 
 function Meetings () {
   return (
@@ -10,13 +12,19 @@ function Meetings () {
 
       <div className="sidebar-component">
       <h3 className="title" >Meetings</h3>
-      <GoPlusSmall color ="white" />
+      <Link to=""><GoPlusSmall color ="white" /></Link>
       </div>
 
       <ul>
-        <li>Meeting 1</li>
-        <li>Meeting 2</li>
-        <li>Meeting 3</li>
+        <li>
+          <Link to="" style={{ textDecoration: 'none', color: '#ffffff' }}>Meeting 1</Link>
+      </li>
+        <li>
+          <Link to="" style={{ textDecoration: 'none', color: '#ffffff' }}>Meeting 2</Link>
+        </li>
+        <li>
+          <Link to="" style={{ textDecoration: 'none', color: '#ffffff' }}>Meeting 3</Link>
+        </li>
       </ul>
 
     </div>

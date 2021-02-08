@@ -212,10 +212,21 @@
 
         /* end .chat-form-container */
 
+
+
         /* Remove padding from user input bar */
         .chat-container {
                 display: block;
                 height: auto;
+        }
+
+        /* end .chat-form-container */
+
+        /* Remove padding from user input bar */
+        .chat-container-2 {
+                display: block;
+                height: auto;
+                padding: 0px;
         }
 
         /* end .chat-form-container */
