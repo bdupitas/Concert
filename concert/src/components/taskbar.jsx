@@ -1,10 +1,10 @@
 import "./../styles/taskbar.css";
 import "./../styles/root.css";
 import TaskBarGroupIcons from "./../components/taskbar-group-icons";
-import CreateGroupButton from "./../components/create-group-button";
 import HomeButton from "./../components/home-button";
 import Container from 'react-bootstrap/Container';
 import { View } from 'react-native';
+import CreateGroup from "./CreateGroup"
 
 
 function TaskBar () {
@@ -21,7 +21,8 @@ function TaskBar () {
       </View>
       <View style={{ flex: 1 }}>
         {/*<!-- Create Group Button -->*/}
-        <CreateGroupButton />
+        {/* <CreateGroupButton /> */}
+        <CreateGroup />
       </View>
     </Container>
     </>

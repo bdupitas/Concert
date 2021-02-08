@@ -1,17 +1,17 @@
 import Button from 'react-bootstrap/Button';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { IoPeopleCircleSharp } from "react-icons/io5";
 
 
-function CreateGroupButton () {
+function CreateGroupButton ({onButtonClick}) {
   return (
     <>
-    <Link to="">
-      <Button style={{ background: 'none', border: 'none' }}>
+    
+      <Button style={{ background: 'none', border: 'none' }} onClick={onButtonClick}>
         <IoPeopleCircleSharp />
         Create Group
       </Button>
-    </Link>
+    
     </>
   );
 }
