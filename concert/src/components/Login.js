@@ -1,22 +1,16 @@
-import React from "react"
-import Form from 'react-bootstrap/Form'
-import Button from 'react-bootstrap/Button'
-import Jumbotron from 'react-bootstrap/Jumbotron'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import React from "react";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import { ReactComponent as Lamp } from "../images/loginLamp.svg";
 
-
-import {ReactComponent as Lamp} from "../images/loginLamp.svg"
-
-const Login = ({children}) => {
+const Login = ({ children }) => {
   return (
     <>
-    <Container>
-    <Jumbotron className="mt-5" md={{ span: 6, offset: 3 }}>
       <Row>
         <Col>
-        <Lamp className="login-lamp" />
+          <Lamp className="login-lamp" />
         </Col>
         <Col>
           <Form>
@@ -24,7 +18,7 @@ const Login = ({children}) => {
               <Form.Label>Email address</Form.Label>
               <Form.Control type="email" placeholder="Enter email" />
               <Form.Text className="text-muted">
-              We'll never share your email with anyone else.
+                We'll never share your email with anyone else.
               </Form.Text>
             </Form.Group>
             <Form.Group controlId="formBasicPassword">
@@ -35,17 +29,14 @@ const Login = ({children}) => {
               <Form.Check type="checkbox" label="Check me out" />
             </Form.Group>
             <Button variant="primary" type="submit">
-            Submit
-             </Button>
+              Submit
+            </Button>
           </Form>
           {children}
-        </Col>      
+        </Col>
       </Row>
-    </Jumbotron>
-  </Container>
-  </>
+    </>
   );
 };
-   
 
 export default Login;
