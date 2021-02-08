@@ -4,12 +4,12 @@ import TextField from "@material-ui/core/TextField";
 import Dialog from "@material-ui/core/Dialog";
 import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
-import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import { makeStyles } from "@material-ui/core/styles";
 import { ThemeProvider, createMuiTheme} from "@material-ui/core/styles";
 import './CreateGroup.css'
 import addImageLogo from '../images/add-image.png'
+import CreateGroupButton from "./create-group-button"
 
 const theme = createMuiTheme({
   overrides: {
@@ -88,9 +88,11 @@ export default function CreateGroup() {
   return (
     <ThemeProvider theme={theme}>
       <div>
-        <Button variant="contained" color="primary" onClick={handleClickOpen}>
-          Create Group
-        </Button>
+
+        {/* <Button variant="contained" color="primary" onClick={handleClickOpen}>
+          Click
+        </Button> */}
+        <CreateGroupButton  onButtonClick={handleClickOpen} />
         <Dialog
           open={open}
           onClose={handleClose}

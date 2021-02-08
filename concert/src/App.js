@@ -1,7 +1,6 @@
 /*App.js*/
 import React from "react";
 import "./App.css";
-import CreateGroup from "./components/CreateGroup.js"
 
 //Import all needed Component for this tutorial
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -34,7 +33,6 @@ const App = () => {
         </Route>
       </Switch>
     </Router>
-    <CreateGroup />
     </>
   );
 };
