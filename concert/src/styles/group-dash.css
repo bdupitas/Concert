@@ -1,12 +1,3 @@
-/* COMP 491L | Spring 2021                              */
-/* Senior Project: Concert                              */
-/* File: dash.css                                       */
-/*======================================================*/
-
-/*===========================*/
-/* Styling for group pages   */
-/*===========================*/
-
 /* Whole Chat Box */
 .chat-container {
         display: grid;
@@ -17,6 +8,15 @@
 }
 
 /* end .chat-container */
+
+/* For group Dash */
+.chat-container-2 {
+        display: grid;
+        grid-template-columns: 1fr 20fr 7fr;
+        max-width: 100vw;
+        height: 100vh;
+        background: #EAF0FC;
+}
 
 /* Top of Message Box with Group Name and Course Info */
 .dash-header {

@@ -5,13 +5,14 @@ import TaskBar from "../components/taskbar"
 
 //Functional Component
 const MainPage = () => {
-return( <div className="chat-container"> 
-<TaskBar />
-<Login children={<Link to="/dash">Group Dash</Link> }/> 
-</div>
+return(
+  <div className="chat-container">
+   <TaskBar />
+   <Login children={<Link to="/dash">Group Dash</Link> }/>
+  </div>
 )
 }
-      
+
 
 
 
