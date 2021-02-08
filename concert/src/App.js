@@ -1,6 +1,7 @@
 /*App.js*/
 import React from "react";
 import "./App.css";
+import CreateGroup from "./components/CreateGroup.js"
 
 //Import all needed Component for this tutorial
 import {
@@ -14,16 +15,18 @@ import MainPage from "./pages/index"; ///< index.jsx will be automatically impor
 import GroupDash from "./pages/group-dash"; ///< index.jsx will be automatically imported
 
 const App = () => {
-    return(
+  return (
+    <>
+    <Router>
+      <Switch>
+      <Route exact path="/" component={MainPage}/>
+      <Route exact path="/dash" component={GroupDash}/>
+      </Switch>
+    </Router>
     
-      <Router>
-        <Switch>
-        <Route exact path="/" component={MainPage}/>
-        <Route exact path="/dash" component={GroupDash}/>
-        </Switch>
-      </Router>
-  
-    );
+    <CreateGroup />
+    </>
+  );
 };
 
 export default App;
