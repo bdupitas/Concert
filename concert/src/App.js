@@ -15,18 +15,22 @@ import SignUp from "./components/SignUp"
 import ForgotPass from "./components/ForgotPass";
 
 const App = () => {
+  const Home = () => <MainPage children={<Login />}/> 
+  const CreateAccount = () => <MainPage children={<SignUp />}/>
+
+
   return (
     <Router>
       <Switch>
-        <Route exact path="/">
-          <MainPage mode={Login} />
+        <Route exact path="/" component={Home}>
+        <Home />
         </Route>
-        <Route exact path="/Forgot">
+        {/* <Route exact path="/Forgot">
           <MainPage mode={ForgotPass} />
         </Route>
         <Route exact path="/Sign-up">
           <MainPage mode={SignUp} />
-        </Route>
+        </Route> */}
         <Route exact path="/dash">
           <GroupDash />
         </Route>
