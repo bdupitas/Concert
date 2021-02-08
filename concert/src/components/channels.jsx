@@ -9,8 +9,9 @@ function Channels () {
     <div className="dash-section">
 
       <div className="sidebar-component">
-      <h3>Channels</h3>
-      <button className="btn"><GoPlusSmall/></button>
+      <h3 className="title">Channels</h3>
+      
+      <GoPlusSmall color ="white" />
       </div>
 
       <ul>
