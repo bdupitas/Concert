@@ -70,7 +70,7 @@ h1 {
 	padding: 2em;
 } /* end h1 */
 
-.forgotTitle h1{ 
+.forgotTitle h1{
   padding:0;
 }
 
@@ -135,6 +135,11 @@ svg {
 .login-svg{
   height: auto;
   width: auto;
+}
+
+.lotus-svg{
+  height: auto;
+  width: 20%;
 }
 
 /* Change layout for smaller screens */

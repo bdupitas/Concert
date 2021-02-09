@@ -3,11 +3,12 @@ import React from "react";
 import "./App.css";
 
 //Import all needed Component for this tutorial
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 
 //Pages
 import MainPage from "./pages/index"; ///< index.jsx will be automatically imported
 import GroupDash from "./pages/group-dash"; ///< index.jsx will be automatically imported
+import NotFound from "./pages/not-found";
 
 //imports modes for the main page to re-render
 import Login from "./components/Login";
@@ -31,6 +32,10 @@ const App = () => {
         <Route exact path="/dash">
         <GroupDash />
         </Route>
+        <Route exact path="/404">
+          <NotFound />
+        </Route>
+        <Redirect to="/404" />
       </Switch>
     </Router>
     </>
