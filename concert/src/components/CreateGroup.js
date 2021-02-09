@@ -63,7 +63,7 @@ const theme = createMuiTheme({
 
 const useStyles = makeStyles(theme =>({
     root: {
-      
+
     },
     buttonPos: {
         padding: "0 10px 30px 0",
@@ -104,7 +104,7 @@ export default function CreateGroup() {
           <DialogContent>
             <div className="dialog-container">
               <div className="textfield-container">
-                  <p>Group Name:</p>
+                  <p className='create-group-p'>Group Name:</p>
                   <TextField
                     margin="dense"
                     id="textfield-name"
@@ -114,7 +114,7 @@ export default function CreateGroup() {
                   />
                 </div>
               <div className="textfield-container">
-                <p>Course/Subject:</p>
+                <p className='create-group-p'>Course/Subject:</p>
                 <TextField
                   margin="dense"
                   id="textfield-course"
@@ -124,7 +124,7 @@ export default function CreateGroup() {
                 />
               </div>
               <div className="textfield-container">
-                <p>Members:</p>
+                <p className='create-group-p'>Members:</p>
                 <TextField
                   margin="dense"
                   id="textfield-members"
