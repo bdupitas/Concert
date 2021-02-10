@@ -7,9 +7,10 @@ import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import { makeStyles } from "@material-ui/core/styles";
 import { ThemeProvider, createMuiTheme} from "@material-ui/core/styles";
+import { RiCloseLine } from "react-icons/ri";
 import './../styles/invite-members-dialog.css';
 import InviteButton from "./invite-button";
-import { RiCloseLine } from "react-icons/ri";
+
 
 const theme = createMuiTheme({
   overrides: {
@@ -107,11 +108,10 @@ export default function InviteMember() {
           <h6>to Room Name</h6>
           </DialogTitle>
 
-          {/* TODO: Adjust textfield and margins to match prototype */}
           <DialogContent>
               <div className="invite-dialog-container">
               <div className="invite-textfield-container">
-                <h6>Add Member</h6>
+                <h6 className="invite-members-h6">Add Member</h6>
                 {/* TODO: Change text field to dropdown */}
                   <TextField
                     margin="dense"
@@ -122,11 +122,11 @@ export default function InviteMember() {
                     placeholder="Type to search members..."
                   />
               </div>
-              {/* TODO: Add selected member styling */}
+              
               <div className="selected-members-container">
-                <Button className="selected-members-button">Member Name <RiCloseLine /></Button>
-                <Button className="selected-members-button">Member Name <RiCloseLine /></Button>
-                <Button className="selected-members-button">Member Name <RiCloseLine /></Button>
+                <button className="selected-members-button">Member Name<RiCloseLine /></button>
+                <button className="selected-members-button">Member Name<RiCloseLine /></button>
+                <button className="selected-members-button">Member Name<RiCloseLine /></button>
                   </div>
               </div>
           </DialogContent>
