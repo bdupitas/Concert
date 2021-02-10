@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+.invite-members-p {
+  font-size: 1.1rem;
+  font-family: "Quicksand", sans-serif;
+  margin-right: 30px;
+  color: #707070;
+  padding: 0;
+}
+
+.selected-members-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.selected-members-button {
+  font-size: 0.8em;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  background: #75a8cb;
+  padding: 0.2em 0.5em;
+  margin: 0.2em;
+  border-radius: 20px;
+}
+
+.selected-members-button:hover {
+  font-family: "Quicksand", sans-serif;
+  color: #EAF0FC;
+  background: #0770a3;
+}
+
+.invite-dialog-container {
+  display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 1;
+    align-items: center;
+}
+
+.invite-textfield-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}

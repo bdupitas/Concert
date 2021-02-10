@@ -1,12 +1,12 @@
-import PrimaryButton from "./PrimaryButton"
+///import InviteButton from "./invite-button"
 import "./../styles/root.css";
 import "./../styles/group-dash.css";
-
+import InviteMember from "./invite-members"
 
 function Members () {
   return (
     <>
-    <PrimaryButton />
+    <InviteMember />
 
     <div className="dash-section">
       {/*<!-- Display User List -->*/}
