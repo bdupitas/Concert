@@ -6,6 +6,7 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import { makeStyles } from "@material-ui/core/styles";
+import { withStyles } from '@material-ui/core/styles';
 import { ThemeProvider, createMuiTheme} from "@material-ui/core/styles";
 import { RiCloseLine } from "react-icons/ri";
 import './../styles/invite-members-dialog.css';
@@ -74,7 +75,29 @@ const useStyles = makeStyles(theme =>({
         bottom: '0px',
         right: '20px',
     },
+
   }));
+
+  const SelectedMemberButton = withStyles({
+    root: {
+      "&:hover": {
+        fontFamily: "Quicksand",
+        color: '#EAF0FC',
+        background: '#0770a3',
+      },
+      fontFamily: 'Quicksand, sans-serif',
+      fontSize: "0.8em",
+      color: "#ffffff",
+      background: "#75a8cb",
+      padding: "0.2em 0.5em",
+      margin: "0.2em",
+      border: "none",
+      borderRadius: "20px",
+    },
+
+    hover: {
+    },
+  })(Button);
 
 export default function InviteMember() {
   const classes = useStyles();
@@ -112,7 +135,7 @@ export default function InviteMember() {
               <div className="invite-dialog-container">
               <div className="invite-textfield-container">
                 <h6 className="invite-members-h6">Add Member</h6>
-                {/* TODO: Change text field to dropdown */}
+                {/* TODO: Change text field to dropdown and search */}
                   <TextField
                     margin="dense"
                     id="textfield-invite"
@@ -124,9 +147,9 @@ export default function InviteMember() {
               </div>
               
               <div className="selected-members-container">
-                <button className="selected-members-button">Member Name<RiCloseLine /></button>
-                <button className="selected-members-button">Member Name<RiCloseLine /></button>
-                <button className="selected-members-button">Member Name<RiCloseLine /></button>
+                <SelectedMemberButton>Member Name<RiCloseLine /></SelectedMemberButton>
+                <SelectedMemberButton>Member Name<RiCloseLine /></SelectedMemberButton>
+                <SelectedMemberButton>Member Name<RiCloseLine /></SelectedMemberButton>
                   </div>
               </div>
           </DialogContent>
