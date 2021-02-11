@@ -29,3 +29,7 @@
     flex-direction: column;
     justify-content: center;
 }
+
+#invite-form-dialog-title {
+  paddingBottom: 0;
+}

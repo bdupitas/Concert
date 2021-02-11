@@ -1,11 +1,15 @@
 import React from "react"
 import Button from 'react-bootstrap/Button'
+import "./../styles/sidebar.css";
+
 
 const InviteButton = ({onButtonClick}) => {
     return(
      <>
-    {/*<!-- Invite Member Button -->*/}
-    <Button onClick={onButtonClick}>Invite</Button>
+     <div class="invite-button-position">
+       {/*<!-- Invite Member Button -->*/}
+       <Button onClick={onButtonClick}>Invite</Button>
+     </div>
     </>
     );
 }

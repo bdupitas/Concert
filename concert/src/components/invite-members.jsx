@@ -75,7 +75,6 @@ const useStyles = makeStyles(theme =>({
         bottom: '0px',
         right: '20px',
     },
-
   }));
 
   const SelectedMemberButton = withStyles({
@@ -115,7 +114,7 @@ export default function InviteMember() {
   return (
     <ThemeProvider theme={theme}>
       <div>
-        <InviteButton onButtonClick={handleClickOpen} />
+          <InviteButton onButtonClick={handleClickOpen} />
 
         <Dialog
           open={open}
@@ -125,8 +124,7 @@ export default function InviteMember() {
           maxWidth = {'xs'}
         >
 
-        {/* TODO: Figure out proper styling */}
-          <DialogTitle id="form-dialog-title" style={{paddingBottom: '0'}}>
+          <DialogTitle id="invite-form-dialog-title">
           Invite Members
           <h6>to Room Name</h6>
           </DialogTitle>
@@ -145,7 +143,7 @@ export default function InviteMember() {
                     placeholder="Type to search members..."
                   />
               </div>
-              
+
               <div className="selected-members-container">
                 <SelectedMemberButton>Member Name<RiCloseLine /></SelectedMemberButton>
                 <SelectedMemberButton>Member Name<RiCloseLine /></SelectedMemberButton>

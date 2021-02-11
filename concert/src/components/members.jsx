@@ -1,14 +1,14 @@
-///import InviteButton from "./invite-button"
 import "./../styles/root.css";
-import "./../styles/group-dash.css";
+import "./../styles/sidebar.css";
 import InviteMember from "./invite-members"
 
 function Members () {
   return (
     <>
-    <InviteMember />
+      <InviteMember />
 
     <div className="dash-section">
+
       {/*<!-- Display User List -->*/}
       <h3 className="title">Members</h3>
       <ul id="users">
