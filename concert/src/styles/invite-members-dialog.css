@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
+.invite-members-text {
+  font-size: 0.5em;
+  font-family: "Quicksand", sans-serif;
+  color: #707070;
+  padding: 0;
+  margin-bottom: 0;
+}
+
 .invite-members-h6 {
   font-size: 1em;
   font-family: "Quicksand", sans-serif;

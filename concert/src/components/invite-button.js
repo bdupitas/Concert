@@ -6,7 +6,7 @@ import "./../styles/sidebar.css";
 const InviteButton = ({onButtonClick}) => {
     return(
      <>
-     <div class="invite-button-position">
+     <div className="invite-button-position">
        {/*<!-- Invite Member Button -->*/}
        <Button onClick={onButtonClick}>Invite</Button>
      </div>

@@ -93,9 +93,6 @@ const useStyles = makeStyles(theme =>({
       border: "none",
       borderRadius: "20px",
     },
-
-    hover: {
-    },
   })(Button);
 
 export default function InviteMember() {
@@ -124,10 +121,10 @@ export default function InviteMember() {
           maxWidth = {'xs'}
         >
 
-          <DialogTitle id="invite-form-dialog-title">
-          Invite Members
-          <h6>to Room Name</h6>
+          <DialogTitle id="invite-form-dialog-title">Invite Members
+          <div className="invite-members-text">to Room Name</div>
           </DialogTitle>
+
 
           <DialogContent>
               <div className="invite-dialog-container">
