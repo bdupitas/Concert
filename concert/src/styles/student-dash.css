@@ -1,0 +1,28 @@
+
+.dash-main {
+    
+}
+
+/* Top of Message Box with Group Name and Course Info */
+.tutor-dash-header {
+        border-bottom: 1px solid #bec6c3;
+        padding: 1em;
+        margin: 1em;
+}
+
+.btn-left {
+        border-radius: 1000px 0px 0px 1000px;
+        background-color: green;
+}
+
+.rounded-left {
+        /*border-radius: 1000px 0px 0px 1000px;*/
+        border-radius: 50%;
+        background-color: green;
+}
+
+ .rounded-right {
+        border-radius: 0 30px 30px 0;
+        padding-right: 40px;
+}
+

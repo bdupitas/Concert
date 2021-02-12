@@ -9,6 +9,8 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-d
 import MainPage from "./pages/index"; ///< index.jsx will be automatically imported
 import GroupDash from "./pages/group-dash"; ///< index.jsx will be automatically imported
 import NotFound from "./pages/not-found";
+import StudentDash from "./pages/student-dash";
+import FAQPage from "./pages/faq-page";
 
 //imports modes for the main page to re-render
 import Login from "./components/Login";
@@ -31,6 +33,12 @@ const App = () => {
         </Route>
         <Route exact path="/dash">
         <GroupDash />
+        </Route>
+        <Route exact path="/student">
+        <StudentDash/>
+        </Route>
+        <Route exact path="/faq">
+        <FAQPage/>
         </Route>
         <Route exact path="/404">
           <NotFound />
