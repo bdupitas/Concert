@@ -13,6 +13,10 @@ function TutorDashHeader () {
         border-radius: 50px 50px 50px 50px;
         background-color: #509DD2;
         color: white;
+        height: 80px;
+        width: 150%;
+        margin-left: 20px;
+        margin-right: 20px;
       }
 
       .btn-rounded:hover {
@@ -29,11 +33,10 @@ function TutorDashHeader () {
     <div className="dash-header">
       <Navbar tutorNavbar variant="transparent">
         <div class="container">
-          <Button variant="rounded">My Classes</Button>
-          <Button variant="rounded">My Tutoring Schedule</Button>
-          <Button variant="rounded">FAQ</Button>
+          <Button variant="rounded" size="lg">My Classes</Button>
+          <Button variant="rounded" size="lg">My Tutoring Schedule</Button>
+          <Button variant="rounded" size="lg">FAQ</Button>
         </div>
-
       </Navbar>
     </div>
     </>
