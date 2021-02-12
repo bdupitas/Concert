@@ -25,28 +25,6 @@
         margin: 1em;
 }
 
-/* 'Members', 'Channels', 'Meetings' and '+' adjustments*/
-.sidebar-component {
-        display: grid;
-        grid-template-columns: 5fr 1fr;
-}
-
-/* '+' Button styleing in sidebar */
-.chat-sidebar .sidebar-component .btn {
-        cursor: pointer;
-        padding: 0em;
-        margin: 0em;
-        background: none;
-
-}
-
-/* Change button color on mouse hover */
-.sidebar-component .btn:hover {
-        background: none;
-}
-
-/* end .btn:hover */
-
 /* Chatroom sidebar and message container  */
 .chat-main {
         display: grid;
@@ -56,35 +34,6 @@
 }
 
 /* end .chat-main */
-
-
-/* Chatroom sidebar box */
-.chat-sidebar {
-        display: grid;
-        grid-template-rows: 1fr 2fr 2fr 2fr;
-        background: #394B58;
-        color: #FFFFFF;
-        padding: 2em;
-}
-
-/* end .chat-sidebar */
-
-/* Sidebar 'Members', 'Channels', 'Meetings' sections */
-.dash-section {
-        border-top: 1px solid #FFFFFF;
-        overflow-y: auto;
-}
-
-/* Leave Room Button */
-.chat-sidebar .btn {
-        margin: 1.5em;
-        text-decoration: none;
-        width: auto;
-        font-size: auto;
-}
-
-/* end .chat-sidebar .btn */
-
 
 /* Message Area */
 .chat-messages {
@@ -96,7 +45,6 @@
 
 /* end .chat-messages */
 
-
 /* Contains H2, Smaller screen Leave Button, Message Display */
 .chat-form-message-area .btn {
         display: none;
@@ -105,7 +53,6 @@
 }
 
 /* end .chat-form-message-area .btn */
-
 
 /* Message Text Box Background */
 .chat-messages .message {
@@ -116,7 +63,6 @@
 }
 
 /* end .chat-messages .message */
-
 
 /* Message Text Box Contents */
 .chat-messages .message .meta {
@@ -129,14 +75,12 @@
 
 /* end .chat-messages .message .meta */
 
-
 /* Message Time */
 .chat-messages .message .meta span {
         color: #75A8CB;
 }
 
 /* end .chat-messages .message .meta span */
-
 
 /* Bottom Message Bar */
 .chat-form-container {
@@ -180,13 +124,6 @@
 
 /* end .chat-form-container input */
 
-.title {
-        font-size: 1.17em;
-        margin-bottom: 0;
-        font-family: 'Quicksand', sans-serif;
-    font-weight: 100;
-}
-
 
 /* Change layout for smaller screens */
 @media only screen and (max-width: 700px) {
@@ -198,21 +135,12 @@
 
         /* end .chat-main */
 
-        /* Hide sidebar */
-        .chat-sidebar {
-                display: none;
-        }
-
-        /* end .chat-sidebar */
-
         /* Remove padding from user input bar */
         .chat-form-container {
                 padding: 0;
         }
 
         /* end .chat-form-container */
-
-
 
         /* Remove padding from user input bar */
         .chat-container {
@@ -245,7 +173,6 @@
         }
 
         /* end .chat-form-container input */
-
 }
 
 /* end media */
