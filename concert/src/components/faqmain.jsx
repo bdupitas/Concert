@@ -3,6 +3,7 @@ import FAQ from './../components/FAQ';
 import TaskBar from './../components/taskbar';
 
 function FAQMain () {
+  <TaskBar/>
   const [faqs, setfaqs] = useState([
     {
       question: 'How can I create a tutoring session?',
@@ -39,7 +40,7 @@ function FAQMain () {
         faq.open = false;
       }
 
-      return faq;
+      return faq; 
     }))
   }
 
@@ -48,7 +49,7 @@ function FAQMain () {
     <div className="FAQMain">
         
       <div className="faqs">
-      <TaskBar/>
+      
         {faqs.map((faq, i) => (
           <FAQ faq={faq} index={i} toggleFAQ={toggleFAQ} />
         ))}

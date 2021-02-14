@@ -2,6 +2,7 @@ import "./../styles/group-dash.css";
 import "./../styles/root.css";
 import { Link } from "react-router-dom";
 import { GoPlusSmall } from "react-icons/go";
+import CreateChannel from "./../components/CreateChannel";
 
 function Channels () {
   return (
@@ -11,7 +12,7 @@ function Channels () {
 
       <div className="sidebar-component">
       <h3 className="title">Channels</h3>
-      <Link to=""><GoPlusSmall color ="white" /></Link>
+      <CreateChannel/>
       </div>
 
       <ul>

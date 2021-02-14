@@ -3,7 +3,7 @@ import "./../styles/root.css";
 import Channels from "./../components/channels";
 import Meetings from "./../components/meetings";
 import Members from "./../components/members";
-
+import CreateChannel from './../components/CreateChannel';
 
 function ChatSideBar () {
   return (
