@@ -4,7 +4,6 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { ReactComponent as Chalkboard } from "../images/createChalkboard.svg";
-import "../styles/SignUp.css";
 
 const collegeNames = [
   "Mike Curb College of Arts, Media, & Communication",
