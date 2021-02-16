@@ -76,8 +76,8 @@ const SignUp = ({ children }) => {
               </Col>
             </Form.Row>
             <Row>
-              <Col xs={{offset:8}}>
-                <Button variant="primary" type="submit">
+              <Col  xs={{offset:8 ,span:4}}>
+                <Button className="ml-2" variant="primary" type="submit">
                   Create Account
                 </Button>
               </Col>
