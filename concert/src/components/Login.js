@@ -3,8 +3,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import ButtonToolbar from "react-bootstrap/ButtonToolbar";
 import { ReactComponent as Lamp } from "../images/loginLamp.svg";
-
 
 const Login = ({ children }) => {
   return (
@@ -26,13 +26,21 @@ const Login = ({ children }) => {
               <Form.Label>Password</Form.Label>
               <Form.Control type="password" placeholder="Password" />
             </Form.Group>
-           
-              <Button className="mr-2" variant="outline-primary" type="submit">
-                Sign up
-              </Button>
-              <Button variant="primary" type="submit">
-                Sign in
-              </Button>
+            <Row>
+              <Col>
+                <ButtonToolbar
+                  className="justify-content-between"
+                  aria-label="Toolbar with Button groups"
+                >
+                  <Button variant="outline-primary" type="submit">
+                    Sign up
+                  </Button>
+                  <Button variant="primary" type="submit">
+                    Sign in
+                  </Button>
+                </ButtonToolbar>
+              </Col>
+            </Row>
           </Form>
           {children}
         </Col>
