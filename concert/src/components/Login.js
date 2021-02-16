@@ -5,6 +5,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { ReactComponent as Lamp } from "../images/loginLamp.svg";
 
+
 const Login = ({ children }) => {
   return (
     <>
@@ -24,9 +25,6 @@ const Login = ({ children }) => {
             <Form.Group controlId="formBasicPassword">
               <Form.Label>Password</Form.Label>
               <Form.Control type="password" placeholder="Password" />
-            </Form.Group>
-            <Form.Group controlId="formBasicCheckbox">
-              <Form.Check type="checkbox" label="Check me out" />
             </Form.Group>
            
               <Button className="mr-2" variant="outline-primary" type="submit">

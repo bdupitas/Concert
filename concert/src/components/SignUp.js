@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { ReactComponent as Chalkboard } from "../images/createChalkboard.svg";
+import "../styles/SignUp.css";
 
 const collegeNames = [
   "Mike Curb College of Arts, Media, & Communication",
@@ -15,7 +16,7 @@ const collegeNames = [
   "Oviatt Library",
   "Science & Mathematics",
   "Social & Behavioral Sciences",
-  "The Tseng College"
+  "The Tseng College",
 ];
 
 const SignUp = ({ children }) => {
@@ -37,11 +38,11 @@ const SignUp = ({ children }) => {
                 <Form.Control type="password" placeholder="" />
               </Form.Group>
             </Form.Row>
+
             <Form.Group controlId="formGridAddress1">
               <Form.Label>Email Address</Form.Label>
               <Form.Control placeholder="" />
             </Form.Group>
-
             <Form.Group controlId="formGridAddress2">
               <Form.Label>Username</Form.Label>
               <Form.Control placeholder="" />
@@ -51,26 +52,19 @@ const SignUp = ({ children }) => {
               <Form.Label>Password</Form.Label>
               <Form.Control type="password" placeholder="" />
             </Form.Group>
+
             <Form.Row className="align-items-center">
               <Col xs="auto" className="my-1">
-                <Form.Label
-                  className="mr-sm-2"
-                  htmlFor="inlineFormCustomSelect"
-                  srOnly
-                >
-                  Preference
-                </Form.Label>
+                <Form.Label>Select College</Form.Label>
                 <Form.Control
                   as="select"
                   className="mr-sm-2"
                   id="inlineFormCustomSelect"
                   custom
                 >
-
-                {collegeNames.map((college, i) =>
-                <option value={i}>{college}</option>
-                )}
-                
+                  {collegeNames.map((college, i) => (
+                    <option value={i}>{college}</option>
+                  ))}
                 </Form.Control>
               </Col>
               <Col xs="auto" className="my-1">
@@ -82,12 +76,14 @@ const SignUp = ({ children }) => {
                 />
               </Col>
             </Form.Row>
-
-            <Button variant="primary" type="submit">
-              Create Account
-            </Button>
+            <Row>
+              <Col xs={{offset:8}}>
+                <Button variant="primary" type="submit">
+                  Create Account
+                </Button>
+              </Col>
+            </Row>
           </Form>
-
           {children}
         </Col>
       </Row>
