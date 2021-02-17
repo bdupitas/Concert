@@ -1,4 +1,4 @@
-import "./../styles/group-dash.css";
+import "./../styles/sidebar.css";
 import "./../styles/root.css";
 import { Link } from "react-router-dom";
 import { GoPlusSmall } from "react-icons/go";
