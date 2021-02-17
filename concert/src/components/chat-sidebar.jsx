@@ -1,4 +1,4 @@
-import "./../styles/group-dash.css";
+import "./../styles/sidebar.css";
 import "./../styles/root.css";
 import Channels from "./../components/channels";
 import Meetings from "./../components/meetings";
