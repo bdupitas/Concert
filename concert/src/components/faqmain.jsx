@@ -3,7 +3,7 @@ import FAQ from './../components/FAQ';
 import TaskBar from './../components/taskbar';
 
 function FAQMain () {
-  <TaskBar/>
+  // <TaskBar/>
   const [faqs, setfaqs] = useState([
     {
       question: 'How can I create a tutoring session?',
