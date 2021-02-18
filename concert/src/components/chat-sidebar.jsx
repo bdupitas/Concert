@@ -9,11 +9,11 @@ function ChatSideBar () {
   return (
     <>
     {/*<!-- Sidebar -->*/}
-    <div className="chat-sidebar">
+    <nav className="chat-sidebar">
       <Members/>
       <Channels/>
       <Meetings/>
-    </div>
+    </nav>
     </>
   );
 }
