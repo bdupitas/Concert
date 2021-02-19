@@ -3,10 +3,10 @@ import "./../styles/root.css";
 import "./../styles/sidebar.css";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
+import { RiCloseLine } from "react-icons/ri";
 import ResChatSideBar from "./../components/res-chat-sidebar";
 import React from "react";
 import Sidebar from "react-sidebar";
-
 
   const mql = window.matchMedia(`(min-width: 700px)`);
 
@@ -22,12 +22,12 @@ import Sidebar from "react-sidebar";
       this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
     }
 
-    componentWillMount() {
+    componentDidMount() {
       mql.addListener(this.mediaQueryChanged);
     }
 
     componentWillUnmount() {
-      this.state.mql.removeListener(this.mediaQueryChanged);
+      mql.removeListener(this.mediaQueryChanged);
     }
 
     onSetSidebarOpen(open) {
@@ -43,15 +43,33 @@ import Sidebar from "react-sidebar";
     return (
       <Sidebar
         sidebar={
-          <div className="menu-bar-pos">
-            <Link to="" className="close-sidebar" onClick={() => this.onSetSidebarOpen(false)}>
-            <FaBars />
+          <>
+          <div className="close-btn-pos">
+            <Link className="close-sidebar" onClick={() => this.onSetSidebarOpen(false)}>
+            <RiCloseLine />
             </Link>
           </div>
-          <ResChatSideBar />}
+          <ResChatSideBar />
+          </>
+        }
         open={this.state.sidebarOpen}
         onSetOpen={this.onSetSidebarOpen}
-        pullRight="true"
+        pullRight={true}
+        styles={{
+                sidebar: {
+                    position: "fixed"
+                },
+                root: {
+                    position: "undefined"
+                },
+                content: {
+                    position: "undefined",
+                    top: "undefined",
+                    left: "undefined",
+                    right: "undefined",
+                    bottom: "undefined"
+                }
+            }}
       >
             <div className="menu-bar-pos">
               <Link to="#" className="menu-bars" onClick={() => this.onSetSidebarOpen(true)}>

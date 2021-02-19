@@ -2,7 +2,7 @@ import "./../styles/group-dash.css";
 import "./../styles/root.css";
 import { Link } from "react-router-dom";
 import { BsCameraVideoFill } from "react-icons/bs";
-import ResMenu from "./../components/responsive-menu";
+import ResMenu from "./../components/responsive-menu"
 
 
 function ChatBoxHeader () {
@@ -13,7 +13,7 @@ function ChatBoxHeader () {
 
     <h2 id="room-name">COMP491 Concert</h2>
     <p>Welcome to #general</p>
-    <Link to=""><BsCameraVideoFill /></Link>
+    <Link to="#"><BsCameraVideoFill /></Link>
     </div>
     </>
   );

@@ -3,6 +3,9 @@ import "./../styles/root.css";
 import Channels from "./../components/channels";
 import Meetings from "./../components/meetings";
 import Members from "./../components/members";
+import Button from "react-bootstrap/Button";
+import { RiCloseLine } from "react-icons/ri";
+
 
 function ResChatSideBar () {
   return (
@@ -12,6 +15,7 @@ function ResChatSideBar () {
       <Members/>
       <Channels/>
       <Meetings/>
+      <Button href="/">Leave Room</Button>
     </div>
     </>
   );

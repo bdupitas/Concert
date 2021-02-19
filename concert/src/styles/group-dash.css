@@ -111,6 +111,16 @@
   display: none;
 }
 
+.close-btn-pos {
+  text-align: right;
+  background: #394b58;
+}
+
+.close-sidebar {
+  color: #EAF0FC;
+  background: #394b58;
+}
+
 /* Change layout for smaller screens */
 @media only screen and (max-width: 700px) {
 
@@ -140,6 +150,7 @@
         /* Show res-Leave Button */
         .chat-form-message-area .btn {
                 display: block;
+                float: none;
                 margin: auto;
         }
 

@@ -48,12 +48,11 @@
         background: #394B58;
         color: #FFFFFF;
         padding: 2em;
-        height: 100vh;
+        height: 96.4vh;
 }
 
 /* Invite Button */
 .res-chat-sidebar .btn {
-        margin: 1.5em;
         text-decoration: none;
         color: #ffffff;
         background: #75a8cb;
