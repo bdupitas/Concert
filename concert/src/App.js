@@ -14,6 +14,7 @@ import NotFound from "./pages/not-found";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
 import ForgotPass from "./components/ForgotPass";
+import DeleteGroup from "./components/DeleteGroup";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
       <Switch>
         <Route exact path="/">
         <MainPage children={<Login />} />
+        <DeleteGroup /> {/* Reroute this to group-icon.jsx */}
         </Route>
         <Route exact path="/Forgot">
         <MainPage children={<ForgotPass />} />
