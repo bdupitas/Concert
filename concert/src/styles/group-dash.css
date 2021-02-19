@@ -167,7 +167,9 @@
         }
 
         .chat-messages {
-                width: 75%;
+                width: 100%;
+                min-height: 75vh;
+                max-height: 75vh;
         }
 
         .menu-bars {

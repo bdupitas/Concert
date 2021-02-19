@@ -8,8 +8,6 @@ import React from "react";
 import Sidebar from "react-sidebar";
 
 
-
-
   const mql = window.matchMedia(`(min-width: 700px)`);
 
   class ResMenu extends React.Component {
@@ -47,6 +45,7 @@ import Sidebar from "react-sidebar";
         sidebar={<ResChatSideBar />}
         open={this.state.sidebarOpen}
         onSetOpen={this.onSetSidebarOpen}
+        pullRight="true"
       >
             <div className="menu-bar-pos">
               <Link to="#" className="menu-bars" onClick={() => this.onSetSidebarOpen(true)}>
