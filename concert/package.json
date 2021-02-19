@@ -5,8 +5,8 @@
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.3",
-    "@testing-library/user-event": "^12.6.2",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.6.3",
     "all": "0.0.0",
     "bootstrap": "^4.6.0",
     "express": "^4.17.1",
@@ -14,14 +14,19 @@
     "react-art": "^17.0.1",
     "react-bootstrap": "^1.4.3",
     "react-dom": "^17.0.1",
-    "react-icons": "^4.1.0",
+    "react-icons": "^4.2.0",
     "react-native": "^0.63.4",
     "react-native-web": "^0.15.0",
     "react-router-dom": "^5.2.0",
     "react-router-native": "^5.2.0",
+<<<<<<< HEAD
     "react-scripts": "^4.0.1",
     "react-sidebar": "^3.0.2",
     "socket.io": "^3.1.0",
+=======
+    "react-scripts": "^4.0.2",
+    "socket.io": "^3.1.1",
+>>>>>>> 988ddc02eb27fee251b7dd20aaf1d55230dae911
     "web-vitals": "^0.2.4"
   },
   "scripts": {
