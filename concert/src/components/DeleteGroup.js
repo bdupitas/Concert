@@ -110,7 +110,7 @@ export default function DeleteGroup() {
               Cancel
             </Button>
             <Button variant="contained" onClick={handleClose} color="primary">
-              Create Group
+              Delete Group
             </Button>
           </DialogActions>
         </Dialog>
