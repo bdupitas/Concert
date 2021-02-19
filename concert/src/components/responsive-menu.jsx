@@ -42,7 +42,13 @@ import Sidebar from "react-sidebar";
   render() {
     return (
       <Sidebar
-        sidebar={<ResChatSideBar />}
+        sidebar={
+          <div className="menu-bar-pos">
+            <Link to="" className="close-sidebar" onClick={() => this.onSetSidebarOpen(false)}>
+            <FaBars />
+            </Link>
+          </div>
+          <ResChatSideBar />}
         open={this.state.sidebarOpen}
         onSetOpen={this.onSetSidebarOpen}
         pullRight="true"

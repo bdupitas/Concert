@@ -19,14 +19,9 @@
     "react-native-web": "^0.15.0",
     "react-router-dom": "^5.2.0",
     "react-router-native": "^5.2.0",
-<<<<<<< HEAD
     "react-scripts": "^4.0.1",
     "react-sidebar": "^3.0.2",
     "socket.io": "^3.1.0",
-=======
-    "react-scripts": "^4.0.2",
-    "socket.io": "^3.1.1",
->>>>>>> 988ddc02eb27fee251b7dd20aaf1d55230dae911
     "web-vitals": "^0.2.4"
   },
   "scripts": {
