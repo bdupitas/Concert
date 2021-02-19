@@ -4,11 +4,11 @@ import Channels from "./../components/channels";
 import Meetings from "./../components/meetings";
 import Members from "./../components/members";
 
-function ChatSideBar () {
+function ResChatSideBar () {
   return (
     <>
     {/*<!-- Sidebar -->*/}
-    <div className="chat-sidebar">
+    <div className="res-chat-sidebar">
       <Members/>
       <Channels/>
       <Meetings/>
@@ -17,4 +17,4 @@ function ChatSideBar () {
   );
 }
 
-export default ChatSideBar;
+export default ResChatSideBar;

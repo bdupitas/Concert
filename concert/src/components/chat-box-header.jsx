@@ -2,17 +2,14 @@ import "./../styles/group-dash.css";
 import "./../styles/root.css";
 import { Link } from "react-router-dom";
 import { BsCameraVideoFill } from "react-icons/bs";
-import { FaBars } from "react-icons/fa";
+import ResMenu from "./../components/responsive-menu";
+
 
 function ChatBoxHeader () {
   return (
     <>
     <div className="dash-header">
-      <div className="menu-bar-pos">
-        <Link to="#" className="menu-bars">
-        <FaBars />
-        </Link>
-      </div>
+    <ResMenu />
 
     <h2 id="room-name">COMP491 Concert</h2>
     <p>Welcome to #general</p>
