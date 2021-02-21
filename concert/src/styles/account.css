@@ -1,0 +1,24 @@
+/* Star Image */
+.star-svg{
+  height: 60%;
+  width: 60%;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background {
+  background-color: #FFF;
+  padding: 2em;
+  margin: 1em;
+  outline: 5px dashed #959595;
+  outline-offset: -15px;
+}
+
+.background-2 {
+  background-color: #EAF0FC;
+  padding: 2em;
+}
