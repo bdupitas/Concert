@@ -27,10 +27,22 @@ nav a {
 	cursor: pointer;
 }
 
+/* Two Column Container */
+.chat-container {
+        display: grid;
+        grid-template-columns: 1fr 20fr;
+        max-width: 100vw;
+        height: 100vh;
+        background: #ffffff;
+}
 
-/* Nav Link Styling On Mouse Hover */
-nav a:hover {
-	background-color: #000000;
+/* Two Column Container */
+.chat-container-2 {
+        display: grid;
+        grid-template-columns: 1fr 20fr 7fr;
+        max-width: 100vw;
+        height: 100vh;
+        background: #EAF0FC;
 }
 
 
@@ -99,11 +111,6 @@ ul {
         font-family: 'Quicksand', sans-serif;
         font-size: 1em;
 	       border-radius: 5px;
-}
-
-/* Change button color on mouse hover */
-.btn:hover {
-	background: #000000;
 }
 
 /* Remove input box border*/

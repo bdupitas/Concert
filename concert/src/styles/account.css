@@ -10,15 +10,39 @@
   justify-content: center;
 }
 
-.background {
+.background-2 {
   background-color: #FFF;
   padding: 2em;
-  margin: 1em;
   outline: 5px dashed #959595;
   outline-offset: -15px;
+  font-family: 'Quicksand';
+  border-radius: 5px;
 }
 
-.background-2 {
+.background {
   background-color: #EAF0FC;
   padding: 2em;
 }
+
+.modal-content {
+  border: 0 !important;
+  border-radius: 0  !important;
+  outline: 5px dashed grey  !important;
+  outline-offset: -15px;
+  padding: 2em;
+  font-family: 'Quicksand';
+  color: #707070;
+}
+
+.modal-header {
+    border-bottom: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.h2, h2 {
+    font-size: 2rem;
+    font-family: 'Quicksand';
+}
+
+/* TODO: Add media query to create responsive layout */
