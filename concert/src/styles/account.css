@@ -4,6 +4,12 @@
   width: 60%;
 }
 
+/* Check Mark Image */
+.check-svg{
+  height: 60%;
+  width: 60%;
+}
+
 .img-container {
   display: flex;
   align-items: center;
