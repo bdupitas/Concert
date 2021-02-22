@@ -14,8 +14,8 @@ function  StudentHeader () {
           border-radius: 50px 50px 50px 50px;
           background-color: #509DD2;
           color: white;
-          height: 80px;
-          width: 100%;
+          height: 64px;
+          width: 250px;
           margin-left: 20px;
           margin-right: 20px;
         }
@@ -34,13 +34,12 @@ function  StudentHeader () {
     <div className="student-header">
       <Navbar studentNavbar variant="transparent">
         <div class="container">
-          <Button variant="rounded" size="lg">My Classes</Button>
-          <Button variant="rounded" size="lg">My Tutoring Schedule</Button>
-          <Link to="/faq">
-              <Button variant="rounded" size="lg">FAQ</Button>
-          </Link>
+          <Button variant="rounded" size="medium">My Classes</Button>
+          <Button variant="rounded" size="medium">My Tutoring Schedule</Button>
+          
+          <Button variant="rounded" size="medium">
+            <Link to="/faq">FAQ</Link></Button>
         </div>
-
       </Navbar>
     </div>
     </>

@@ -1,15 +1,12 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
-import TextField from "@material-ui/core/TextField";
 import Dialog from "@material-ui/core/Dialog";
 import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import { makeStyles } from "@material-ui/core/styles";
 import { ThemeProvider, createMuiTheme} from "@material-ui/core/styles";
-import './../styles/CreateGroup.css'
-import CreateChannelButton from './../components/create-channel-button';
-import { brown } from "@material-ui/core/colors";
+import './../styles/DeleteGroup.css'
 
 const theme = createMuiTheme({
   overrides: {
@@ -22,6 +19,7 @@ const theme = createMuiTheme({
       h6: {
         fontSize: '2.3rem',
         fontFamily: 'Quicksand',
+        textAlign: 'center'
       }
     },
     MuiOutlinedInput: {
@@ -37,8 +35,8 @@ const theme = createMuiTheme({
         outlineColor: '#959595',
         borderStyle: 'solid',
         borderColor: '#959595',
-        maxHeight: '50vh',
-        minHeight: '50vh',
+        maxHeight: '40vh',
+        minHeight: '40vh',
       }
     },
     MuiButton: {
@@ -52,7 +50,7 @@ const theme = createMuiTheme({
   },
   breakpoints: {
     values: {
-      xs: 0,
+      xs: 500,
       sm: 700,
       md: 960,
       lg: 1280,
@@ -63,7 +61,7 @@ const theme = createMuiTheme({
 
 const useStyles = makeStyles(theme =>({
     root: {
-      
+
     },
     buttonPos: {
         padding: "0 10px 30px 0",
@@ -73,7 +71,7 @@ const useStyles = makeStyles(theme =>({
     },
   }));
 
-export default function CreateChannel() {
+export default function DeleteGroup() {
   const classes = useStyles();
 
   const [open, setOpen] = React.useState(false);
@@ -88,32 +86,22 @@ export default function CreateChannel() {
   return (
     <ThemeProvider theme={theme}>
       <div>
-
-        {/* <Button variant="contained" color="primary" onClick={handleClickOpen}>
-          Click
-        </Button> */}
-        <CreateChannelButton  onButtonClick={handleClickOpen} />
+        <Button variant="contained" color="primary" onClick={handleClickOpen}>
+          Delete Group
+        </Button>
         <Dialog
           open={open}
           onClose={handleClose}
           aria-labelledby="form-dialog-title"
           fullWidth={true}
-          maxWidth = {'sm'}
+          maxWidth = {'xs'}
         >
-          <DialogTitle id="form-dialog-title">Add Channel
-          </DialogTitle>
-          <p>to COMP491 Concert</p>
+          <DialogTitle id="form-dialog-title">Delete Group</DialogTitle>
           <DialogContent>
             <div className="dialog-container">
-              <div className="textfield-container">
-                  <p>Channel Name: #</p>
-                  <TextField
-                    margin="dense"
-                    id="textfield-name"
-                    type="text"
-                    variant="outlined"
-                    size="small"
-                  />
+                <div className="text-container">
+                  <p className='delete-group-p'>Are you sure you want to delete [Group-Name]?</p>
+                  <p className='delete-group-p'>All contents will be deleted.</p>
                 </div>
             </div>
           </DialogContent>
@@ -122,7 +110,7 @@ export default function CreateChannel() {
               Cancel
             </Button>
             <Button variant="contained" onClick={handleClose} color="primary">
-              Add
+              Delete Group
             </Button>
           </DialogActions>
         </Dialog>

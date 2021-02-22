@@ -1,19 +1,9 @@
-/* COMP 491L | Spring 2021                              */
-/* Senior Project: Concert                              */
-/* File: root.css                                       */
-/*======================================================*/
-
-/*===========================*/
-/* Styling for whole website */
-/*===========================*/
-
-
 /* Universal Styling */
 * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-} /* end * */
+}
 
 
 /* Nav Bar Styling */
@@ -25,7 +15,7 @@ nav {
 	margin: auto;
 	margin-top: 1em;
 	margin-bottom: 1em;
-} /* end nav */
+}
 
 
 /* Nav Link Styling */
@@ -35,13 +25,13 @@ nav a {
 	padding: 1em;
 	text-decoration: none;
 	cursor: pointer;
-} /* end nav a */
+}
 
 
-/* Nav Link Styling On Mouse Hover */
+/* Nav Link Styling On Mouse Hover
 nav a:hover {
-	background-color: transparent;
-} /* end a:hover */
+	background-color: #000000;
+} */
 
 
 /* Body styling */
@@ -52,7 +42,7 @@ body {
         width: 100%;
         height: 100%;
 	     margin: auto;
-} /* end body */
+}
 
 
 /* Header Styling */
@@ -61,14 +51,14 @@ header {
         font-family: 'Helvetica', sans-serif;
         font-size: 1em;
 	padding: 2em;
-} /* end header */
+}
 
 
 /* Heading 1 Styling using Google Font */
 h1 {
 	font-family: 'Averia Sans Libre', cursive;
 	padding: 2em;
-} /* end h1 */
+}
 
 .forgotTitle h1{
   padding:0;
@@ -81,7 +71,7 @@ h2 {
   color: #707070;
   padding: 0.5em 0em;
   font-size: 2em;
-} /* end h2 */
+}
 
 h3 {
   font-family: 'Quicksand', sans-serif;
@@ -96,11 +86,10 @@ p {
 ul {
           font-family: 'Quicksand', sans-serif;
         list-style: none;
-} /* end ul */
+}
 
 
 /* Button Styling */
-
 .btn {
         cursor: pointer;
         padding: 0.5em 1em;
@@ -110,13 +99,12 @@ ul {
         font-family: 'Quicksand', sans-serif;
         font-size: 1em;
 	       border-radius: 5px;
-} /* end .btn */
-
+}
 
 /* Change button color on mouse hover */
 .btn:hover {
 	background: #000000;
-} /* end .btn:hover */
+}
 
 /* Remove input box border*/
 input {
@@ -130,13 +118,15 @@ svg {
 	width: 2em;
 	height: 1.5em;
 	fill: currentColor;
-} /* end svg */
+}
 
+/* Login Lamp image */
 .login-svg{
   height: auto;
   width: auto;
 }
 
+/* 404 Lotus Image */
 .lotus-svg{
   height: auto;
   width: 20%;
@@ -147,4 +137,4 @@ svg {
   h2 {
     font-size: 1em;
   }
-} /* end media */
+}

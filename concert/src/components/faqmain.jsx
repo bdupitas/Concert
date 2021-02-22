@@ -8,7 +8,7 @@ function FAQMain () {
     {
       question: 'How can I create a tutoring session?',
       answer: 'First go to the student page, then click on create tutoring schedule, from here input the necessary information and submit.',
-      open: true
+      open: false
     },
     {
       question: 'How can I create my groups?',
